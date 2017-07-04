@@ -4,6 +4,7 @@ import React, {
   PropTypes,
 } from 'react';
 import {
+  Platform,
   ScrollView,
   StyleSheet,
   View,
@@ -69,13 +70,25 @@ let InvertibleScrollView = React.createClass({
 });
 
 let styles = StyleSheet.create({
-  verticallyInverted: {
+  verticallyInvertedAndroid: {
     flex: 1,
     transform: [
       { rotate: '180deg' },
     ],
   },
-  verticallyInvertedChild: {
+  verticallyInvertedChildAndroid: {
+    flex: 1,
+    transform: [
+      { rotate: '-180deg' },
+    ],
+  },
+  verticallyInvertedIOS: {
+    flex: 1,
+    transform: [
+      { rotate: '180deg' },
+    ],
+  },
+  verticallyInvertedChildIOS: {
     flex: 1,
     transform: [
       { rotate: '-180deg' },
