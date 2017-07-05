@@ -75,7 +75,7 @@ let styles = StyleSheet.create({
         Platform.OS === 'ios'?
             { scaleY: -1 }
         :
-            { rotate: '180deg' }
+            { rotateX: '180deg' }
     ],
   },
   verticallyInvertedChild: {
@@ -83,7 +83,7 @@ let styles = StyleSheet.create({
         Platform.OS === 'ios'?
             { scaleY: -1 }
         :
-            { rotate: '-180deg' }
+            { rotateX: '-180deg' }
     ],
   },
   horizontallyInverted: {
